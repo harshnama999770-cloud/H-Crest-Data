@@ -1,156 +1,157 @@
-# 🚀 H-Crest Data
+# H-Crest Data
 
-### Enterprise-Grade Automated Data Cleaning & Observability Pipeline
+Enterprise-grade automated data cleaning and data observability pipeline designed to transform messy real-world datasets into reliable machine-learning-ready data.
 
 ![Python](https://img.shields.io/badge/Python-3.8%2B-blue?logo=python)
 ![Pandas](https://img.shields.io/badge/Pandas-Data_Processing-150458?logo=pandas)
 ![Scikit-Learn](https://img.shields.io/badge/Scikit--Learn-Pipeline_Architecture-F7931E?logo=scikit-learn)
 ![AI](https://img.shields.io/badge/AI-Semantic_Routing-FF6F00)
-![Status](https://img.shields.io/badge/Status-Active_Development-brightgreen)
 
 
 
-# 🧭 About This Project
+## About
 
-**H-Crest Data** is a modular data-cleaning and data-observability pipeline designed to transform messy real-world datasets into reliable machine-learning-ready data.
+H-Crest Data is a modular pipeline designed to automate dataset preparation for machine learning and analytics workflows.
 
-The project focuses on solving a common problem in ML systems: **raw datasets are rarely clean, structured, or trustworthy**.
+Real-world datasets are rarely clean or structured. They often contain missing values, inconsistent formats, incorrect relationships, and undocumented schemas. Preparing these datasets manually can consume a significant portion of ML development time.
 
-Instead of using simple cleaning scripts, this project builds a **structured pipeline inspired by production data engineering systems**, combining:
+This project explores how a structured pipeline can automatically analyze, clean, validate, and score datasets before they are used by downstream machine learning systems.
 
-* structural data validation
-* semantic understanding of columns
-* intelligent missing-value imputation
-* automated quality scoring
-
-The goal is to create a system that **reduces manual dataset preparation while improving reliability and transparency.**
-
----
-
-# 🎯 Motivation
-
-In real ML workflows, a large portion of time is spent cleaning data.
-Most existing tools handle basic cleaning but lack **safety, observability, and semantic understanding**.
-
-This project explores how a pipeline can:
-
-* automatically understand datasets
-* safely transform data without corruption
-* monitor data quality over time
-* prepare reliable inputs for ML pipelines
-
----
-
-# ✨ Core Capabilities
-
-## 📊 Data Quality Scorecard
-
-The system produces an interpretable **dataset quality score** based on multiple factors.
-
-Metrics include:
-
-* Completeness
-* Validity
-* Consistency
-* Uniqueness
-* Pattern compliance
-
-Each dataset receives:
-
-* a **0-100 score**
-* an **A–F quality grade**
-* recommended improvement actions
-
-This makes dataset quality visible to both engineers and analysts.
+The pipeline combines rule-based data engineering techniques with optional LLM-assisted semantic reasoning to improve dataset understanding and validation.
 
 
 
-## 🤖 Semantic Column Understanding
+## Motivation
 
-The pipeline attempts to infer **column meaning and structure**, enabling intelligent processing.
+In many machine learning projects, most of the effort is spent on data preparation rather than model training.
 
-Examples:
+While existing tools provide simple cleaning utilities, they often lack deeper capabilities such as schema understanding, safety guards, and dataset quality monitoring.
 
-* detecting currency columns
-* recognizing timestamps
-* identifying contact information patterns
-* detecting logical column relationships
+H-Crest Data explores a pipeline architecture that can:
 
-Ambiguous columns can be routed to a lightweight semantic inference step.
-
-
-
-## 🧠 Intelligent Missing Value Imputation
-
-Instead of simple mean/median filling, the system uses a **multi-stage strategy**:
-
-1. Group-based median imputation
-2. k-Nearest Neighbor similarity imputation
-3. Global median fallback
-
-This approach preserves statistical integrity better than naive imputation.
+* automatically understand dataset structure
+* apply safe cleaning transformations
+* detect logical data inconsistencies
+* intelligently handle missing values
+* generate dataset quality scores
+* optionally use AI for semantic schema inference
 
 
 
-## 🛡️ Safe Data Transformations
+## Core Capabilities
 
-To prevent destructive cleaning operations, the pipeline includes safety checks such as:
+### Automated Data Cleaning Pipeline
 
-* **Null inflation detection**
-* automatic rollback of risky transformations
-* skipping highly sparse columns
-* numeric stability guards
+The system processes datasets through multiple structured stages. Each stage performs a specific transformation or validation task.
 
-These mechanisms help avoid accidental data corruption.
-
----
-
-## 🔗 Cross-Column Relationship Validation
-
-Logical relationships between columns can be automatically validated.
-
-Examples include:
-
-* `start_date` must occur before `end_date`
-* `min_price` must be lower than `max_price`
-* format validation for email or phone columns
-
-When safe, the system can automatically correct detected inconsistencies.
-
----
-
-# 🏗️ Pipeline Architecture
-
-The project is built as a modular **Scikit-Learn style pipeline** using custom transformers.
-
-This approach provides:
-
-* clear separation of responsibilities
-* reusable processing stages
-* easier debugging and extension
-
-| Stage      | Component             | Responsibility                            |
-| ---------- | --------------------- | ----------------------------------------- |
-| Stage 0    | ColumnNormalizer      | Normalize column names and aliases        |
-| Stage 1    | StructuralAutoCleaner | Detect column types and structural issues |
-| Stage 2    | QualityRuleCleaner    | Apply universal parsing rules             |
-| Stage 2.5  | SemanticProfiler      | Build dataset intelligence layer          |
-| Stage 3    | SemanticValidator     | Validate column meaning and risk          |
-| Stage 3.0  | RelationshipValidator | Cross-column logic checks                 |
-| Stage 4    | PatternValidator      | Regex-based validation                    |
-| Stage 5    | OutlierAwareImputer   | Missing value handling                    |
-| Stage 6    | DataQualityScorecard  | Dataset grading and reporting             |
-| Controller | SafeCleaningPipeline  | Orchestrates all stages                   |
-
----
-
-# 🧪 Example Usage
+This modular architecture allows the system to remain transparent, extensible, and easier to debug.
 
 
-from pipeline.safe_cleaning_pipeline import SafeCleaningPipeline
+
+### Semantic Dataset Understanding
+
+The pipeline attempts to infer the semantic meaning of columns.
+
+Examples include identifying:
+
+* timestamps
+* identifiers
+* currency values
+* contact information
+* measurement values
+
+When rule-based logic cannot determine column meaning confidently, an LLM-assisted inference module can be used.
+
+
+
+### Intelligent Missing Value Handling
+
+Instead of naive imputation, the system applies a multi-stage strategy:
+
+1. group-based median imputation
+2. similarity-based kNN imputation
+3. global fallback values
+
+This approach helps preserve statistical consistency in the dataset.
+
+
+
+### Data Quality Scorecard
+
+Each processed dataset receives a quality score based on multiple metrics including:
+
+* completeness
+* validity
+* consistency
+* uniqueness
+* structural integrity
+
+The score provides a quick overview of whether the dataset is reliable enough for downstream machine learning tasks.
+
+
+
+### Safety Guards
+
+The pipeline includes multiple protections to avoid destructive transformations:
+
+* null inflation detection
+* rollback of risky cleaning operations
+* sparse column protection
+* numeric stability checks
+
+These safeguards help prevent accidental corruption of datasets during automated cleaning.
+
+
+
+## LLM Integration
+
+The pipeline optionally integrates a local LLM for semantic schema understanding.
+
+Components responsible for LLM integration include:
+
+* llm/llm_client.py
+* llm/llm_schema_infer.py
+* llm/semantic_inference.py
+
+The model assists with:
+
+* semantic column inference
+* dataset schema interpretation
+* validation rule suggestions
+
+The system only calls the LLM when rule-based logic cannot confidently determine column meaning.
+
+This hybrid design allows the pipeline to combine deterministic safety with AI-assisted flexibility.
+
+
+
+## Pipeline Architecture
+
+The system is implemented as a structured multi-stage pipeline.
+
+| Stage     | File                | Responsibility                |
+| --------- | ------------------- | ----------------------------- |
+| Stage 0   | cleaningStage0.py   | Column normalization          |
+| Stage 1   | cleaningStage1.py   | Structural dataset inspection |
+| Stage 2   | cleaningStage2.py   | Data validation rules         |
+| Stage 2.5 | cleaningStage2_5.py | Semantic profiling            |
+| Stage 3   | cleaningStage3.py   | Semantic validation           |
+| Stage 3.0 | cleaningStage3_0.py | Relationship validation       |
+| Stage 4   | cleaningStage4.py   | Pattern validation            |
+| Stage 5   | cleaningStage5.py   | Missing value imputation      |
+| Stage 6   | cleaningStage6.py   | Dataset quality scoring       |
+
+The pipeline controller coordinates these stages and produces the final cleaned dataset.
+
+
+
+## Example Usage
+
+
 import pandas as pd
+from pipeline.pipeline import SafeCleaningPipeline
 
-df = pd.read_csv("data/sample_dirty_dataset.csv")
+df = pd.read_csv("dataset.csv")
 
 pipeline = SafeCleaningPipeline()
 
@@ -159,53 +160,78 @@ clean_df = pipeline.fit_transform(df)
 print(clean_df.head())
 
 
-# 📁 Project Structure
+## Project Structure
 
-
-H-Crest-Data/
+H-Crest-Data
+│
+├── README.md
+├── requirements.txt
+├── LICENSE
+│
+├── app/
+│   ├── app.py
+│   ├── runner.py
+│   └── run_pipeline_once.py
 │
 ├── pipeline/
-│   ├── column_normalizer.py
-│   ├── structural_auto_cleaner.py
-│   ├── quality_rule_cleaner.py
-│   ├── semantic_profiler.py
-│   ├── semantic_validator.py
-│   ├── relationship_validator.py
-│   ├── pattern_validator.py
-│   ├── outlier_aware_imputer.py
-│   ├── data_quality_scorecard.py
-│   └── safe_cleaning_pipeline.py
+│   ├── pipeline.py
+│   ├── pipeline_utils.py
+│   ├── cleaningStage0.py
+│   ├── cleaningStage1.py
+│   ├── cleaningStage2.py
+│   ├── cleaningStage2_5.py
+│   ├── cleaningStage3.py
+│   ├── cleaningStage3_0.py
+│   ├── cleaningStage4.py
+│   ├── cleaningStage5.py
+│   └── cleaningStage6.py
 │
-├── data/
-│   └── sample_dirty_dataset.csv
+├── intelligence/
+│   ├── data_profiler.py
+│   ├── data_intelligence.py
+│   └── export_normalizer.py
 │
-├── run_demo.py
-├── requirements.txt
-└── README.md
+├── llm/
+│   ├── llm_client.py
+│   ├── llm_schema_infer.py
+│   └── semantic_inference.py
+│
+├── memory/
+│   ├── learning_memory.py
+│   ├── semantic_history.json
+│   └── quality_history.json
+│
+├── tests/
+│   ├── test_pipeline.py
+│   └── test_llm.py
+│
+└── models/
+    └── pipeline.pkl
 
-# 💻 Tech Stack
 
-**Programming**
 
-* Python
 
-**Data Processing**
+## Tech Stack
 
-* Pandas
-* NumPy
+Programming
+Python
 
-**Pipeline Architecture**
+Data Processing
+Pandas
+NumPy
 
-* Scikit-Learn Transformers
+Pipeline Infrastructure
+Scikit-Learn Transformers
 
-**Additional Components**
+Additional Components
 
 * Regex validation
-* JSON memory storage
+* JSON-based learning memory
+* Local LLM semantic inference
 * Joblib pipeline persistence
 
 
-# 🚀 Installation
+## Installation
 
 Clone the repository
 
@@ -220,34 +246,33 @@ Install dependencies
 pip install -r requirements.txt
 
 
-Run the demo
+Run the pipeline
 
 
-python run_demo.py
+python app/run_pipeline_once.py
 
 
 
 
-# 🎓 Learning Goals
+## Learning Goals
 
-This project explores several concepts important in data engineering and ML infrastructure:
+This project explores several topics related to machine learning infrastructure:
 
-* automated data preparation pipelines
-* safe transformation systems
-* dataset observability
+* automated dataset preparation
+* modular pipeline architecture
 * semantic data validation
-* modular pipeline design
+* hybrid rule-based and AI-assisted systems
+* dataset observability
 
 
 
-# 👨‍💻 Author
+## Author
 
-**Harsh Nama**
-
+Harsh Nama
 Founder — H-Crest Data
 
 
 
-# 📄 License
+## License
 
 MIT License
