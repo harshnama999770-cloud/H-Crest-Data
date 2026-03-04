@@ -236,7 +236,7 @@ Additional Components
 Clone the repository
 
 
-git clone https://github.com/YOUR-USERNAME/H-Crest-Data.git
+git clone https://github.com/harshnama999770-cloud/H-Crest-Data.git
 cd H-Crest-Data
 
 
