@@ -1,0 +1,2154 @@
+{
+  "mode": "single",
+  "files_cleaned": [
+    "un_cleaned_enterprise_V_3.xlsx"
+  ],
+  "reports_per_file": {
+    "un_cleaned_enterprise_V_3.xlsx": {
+      "issue_count": 745,
+      "scorecard": {
+        "overall_score": 91.18,
+        "health_grade": "B",
+        "dimensions": {
+          "completeness": {
+            "score": 78.36,
+            "non_null_cells": 10285,
+            "total_cells": 13125,
+            "missing_cells": 2840
+          },
+          "validity": {
+            "score": 96.9,
+            "semantic_penalty": 407.3954
+          },
+          "pattern": {
+            "score": 97.52,
+            "pattern_penalty": 325.15
+          },
+          "consistency": {
+            "score": 88.84,
+            "relationship_penalty": 69.75
+          },
+          "uniqueness": {
+            "score": 100.0,
+            "duplicate_issues": 0
+          }
+        },
+        "summary": {
+          "rows": 625,
+          "columns": 21,
+          "total_issues": 745,
+          "row_issues_used_in_score": 743,
+          "global_issues_not_scored": 2,
+          "issues_by_stage_all": {
+            "semantic": 482,
+            "relationship": 32,
+            "pattern": 230,
+            "imputation": 1
+          },
+          "issues_by_stage_row": {
+            "semantic": 482,
+            "relationship": 31,
+            "pattern": 230
+          },
+          "issues_by_stage_global": {
+            "relationship": 1,
+            "imputation": 1
+          }
+        },
+        "warnings": {
+          "count": 2,
+          "by_stage": {
+            "relationship": 1,
+            "imputation": 1
+          }
+        },
+        "analytics": {
+          "columns_with_most_missing": [
+            {
+              "column": "unnamed_99",
+              "missing": 625,
+              "percent": 100.0
+            },
+            {
+              "column": "extra",
+              "missing": 529,
+              "percent": 84.64
+            },
+            {
+              "column": "postal_code",
+              "missing": 376,
+              "percent": 60.16
+            },
+            {
+              "column": "user_id",
+              "missing": 322,
+              "percent": 51.52
+            },
+            {
+              "column": "order_id",
+              "missing": 219,
+              "percent": 35.04
+            },
+            {
+              "column": "createdtime",
+              "missing": 180,
+              "percent": 28.8
+            },
+            {
+              "column": "payment_status",
+              "missing": 163,
+              "percent": 26.08
+            },
+            {
+              "column": "phone",
+              "missing": 123,
+              "percent": 19.68
+            },
+            {
+              "column": "customer_rating",
+              "missing": 117,
+              "percent": 18.72
+            },
+            {
+              "column": "country",
+              "missing": 64,
+              "percent": 10.24
+            }
+          ],
+          "top_10_worst_columns_row_only": [
+            {
+              "name": "discount",
+              "count": 392
+            },
+            {
+              "name": "phone",
+              "count": 107
+            },
+            {
+              "name": "email",
+              "count": 104
+            },
+            {
+              "name": "qty",
+              "count": 90
+            },
+            {
+              "name": "notes",
+              "count": 37
+            },
+            {
+              "name": "postal_code",
+              "count": 13
+            }
+          ],
+          "top_10_worst_columns_all": [
+            {
+              "name": "discount",
+              "count": 392
+            },
+            {
+              "name": "phone",
+              "count": 107
+            },
+            {
+              "name": "email",
+              "count": 104
+            },
+            {
+              "name": "qty",
+              "count": 90
+            },
+            {
+              "name": "notes",
+              "count": 37
+            },
+            {
+              "name": "postal_code",
+              "count": 13
+            },
+            {
+              "name": "order_id",
+              "count": 1
+            },
+            {
+              "name": "unnamed_99",
+              "count": 1
+            }
+          ],
+          "most_frequent_issue_types_all": [
+            {
+              "name": "must be integer",
+              "count": 392
+            },
+            {
+              "name": "below minimum",
+              "count": 90
+            },
+            {
+              "name": "phone pattern: invalid format",
+              "count": 81
+            },
+            {
+              "name": "category pattern: rare value (possible typo)",
+              "count": 37
+            },
+            {
+              "name": "invalid email format",
+              "count": 31
+            },
+            {
+              "name": "email pattern: invalid format",
+              "count": 31
+            },
+            {
+              "name": "phone pattern: invalid for India",
+              "count": 26
+            },
+            {
+              "name": "email pattern: missing domain",
+              "count": 18
+            },
+            {
+              "name": "email pattern: domain missing dot",
+              "count": 13
+            },
+            {
+              "name": "postal pattern: invalid for India",
+              "count": 13
+            }
+          ],
+          "most_frequent_issue_types_row_only": [
+            {
+              "name": "must be integer",
+              "count": 392
+            },
+            {
+              "name": "below minimum",
+              "count": 90
+            },
+            {
+              "name": "phone pattern: invalid format",
+              "count": 81
+            },
+            {
+              "name": "category pattern: rare value (possible typo)",
+              "count": 37
+            },
+            {
+              "name": "invalid email format",
+              "count": 31
+            },
+            {
+              "name": "email pattern: invalid format",
+              "count": 31
+            },
+            {
+              "name": "phone pattern: invalid for India",
+              "count": 26
+            },
+            {
+              "name": "email pattern: missing domain",
+              "count": 18
+            },
+            {
+              "name": "email pattern: domain missing dot",
+              "count": 13
+            },
+            {
+              "name": "postal pattern: invalid for India",
+              "count": 13
+            }
+          ],
+          "most_frequent_issue_types_global_only": [
+            {
+              "name": "high null rate for primary key",
+              "count": 1
+            },
+            {
+              "name": "too sparse to safely impute",
+              "count": 1
+            }
+          ],
+          "top_5_worst_rows": [
+            {
+              "row": 453,
+              "severity_score": 23.06,
+              "issue_count": 8,
+              "top_issue_types": [
+                {
+                  "name": "below minimum",
+                  "count": 1
+                },
+                {
+                  "name": "must be integer",
+                  "count": 1
+                },
+                {
+                  "name": "invalid email format",
+                  "count": 1
+                },
+                {
+                  "name": "email pattern: missing domain",
+                  "count": 1
+                },
+                {
+                  "name": "email pattern: invalid format",
+                  "count": 1
+                }
+              ]
+            },
+            {
+              "row": 434,
+              "severity_score": 22.575,
+              "issue_count": 7,
+              "top_issue_types": [
+                {
+                  "name": "invalid email format",
+                  "count": 1
+                },
+                {
+                  "name": "email pattern: invalid @ count",
+                  "count": 1
+                },
+                {
+                  "name": "email pattern: missing domain",
+                  "count": 1
+                },
+                {
+                  "name": "email pattern: invalid format",
+                  "count": 1
+                },
+                {
+                  "name": "phone pattern: invalid for India",
+                  "count": 1
+                }
+              ]
+            },
+            {
+              "row": 383,
+              "severity_score": 17.686,
+              "issue_count": 6,
+              "top_issue_types": [
+                {
+                  "name": "must be integer",
+                  "count": 1
+                },
+                {
+                  "name": "invalid email format",
+                  "count": 1
+                },
+                {
+                  "name": "email pattern: domain missing dot",
+                  "count": 1
+                },
+                {
+                  "name": "email pattern: invalid format",
+                  "count": 1
+                },
+                {
+                  "name": "phone pattern: invalid for India",
+                  "count": 1
+                }
+              ]
+            },
+            {
+              "row": 460,
+              "severity_score": 17.625,
+              "issue_count": 6,
+              "top_issue_types": [
+                {
+                  "name": "invalid email format",
+                  "count": 1
+                },
+                {
+                  "name": "email pattern: invalid @ count",
+                  "count": 1
+                },
+                {
+                  "name": "email pattern: missing domain",
+                  "count": 1
+                },
+                {
+                  "name": "email pattern: invalid format",
+                  "count": 1
+                },
+                {
+                  "name": "phone pattern: invalid format",
+                  "count": 1
+                }
+              ]
+            },
+            {
+              "row": 193,
+              "severity_score": 15.711,
+              "issue_count": 5,
+              "top_issue_types": [
+                {
+                  "name": "must be integer",
+                  "count": 1
+                },
+                {
+                  "name": "invalid email format",
+                  "count": 1
+                },
+                {
+                  "name": "email pattern: invalid @ count",
+                  "count": 1
+                },
+                {
+                  "name": "email pattern: missing domain",
+                  "count": 1
+                },
+                {
+                  "name": "email pattern: invalid format",
+                  "count": 1
+                }
+              ]
+            }
+          ],
+          "drilldown_by_column": {
+            "discount": [
+              {
+                "issue": "must be integer",
+                "count": 392,
+                "severity_mix": {
+                  "error": 0,
+                  "warn": 392,
+                  "info": 0
+                },
+                "examples": [
+                  {
+                    "issue_id": "97ffa12505e3",
+                    "row": 3,
+                    "severity": "warn",
+                    "confidence": 0.8452187350847922,
+                    "details": {
+                      "rule": "int"
+                    }
+                  },
+                  {
+                    "issue_id": "4ca3a941c1bc",
+                    "row": 4,
+                    "severity": "warn",
+                    "confidence": 0.8452187350847922,
+                    "details": {
+                      "rule": "int"
+                    }
+                  },
+                  {
+                    "issue_id": "286f1d51eb80",
+                    "row": 5,
+                    "severity": "warn",
+                    "confidence": 0.8452187350847922,
+                    "details": {
+                      "rule": "int"
+                    }
+                  }
+                ]
+              }
+            ],
+            "phone": [
+              {
+                "issue": "phone pattern: invalid format",
+                "count": 81,
+                "severity_mix": {
+                  "error": 0,
+                  "warn": 81,
+                  "info": 0
+                },
+                "examples": [
+                  {
+                    "issue_id": "4bac823b0ee7",
+                    "row": 0,
+                    "severity": "warn",
+                    "confidence": 0.8,
+                    "details": {
+                      "rule": "pattern_regex",
+                      "pattern_name": "phone",
+                      "regex": "^\\+?[\\d\\-\\s\\(\\)]{7,20}$",
+                      "hit_ratio": 0.8386454183266933,
+                      "min_hit_ratio": 0.5,
+                      "severity": "warn",
+                      "source": "builtin"
+                    }
+                  },
+                  {
+                    "issue_id": "efe0f2ff7572",
+                    "row": 8,
+                    "severity": "warn",
+                    "confidence": 0.8,
+                    "details": {
+                      "rule": "pattern_regex",
+                      "pattern_name": "phone",
+                      "regex": "^\\+?[\\d\\-\\s\\(\\)]{7,20}$",
+                      "hit_ratio": 0.8386454183266933,
+                      "min_hit_ratio": 0.5,
+                      "severity": "warn",
+                      "source": "builtin"
+                    }
+                  },
+                  {
+                    "issue_id": "fe8823de242a",
+                    "row": 29,
+                    "severity": "warn",
+                    "confidence": 0.8,
+                    "details": {
+                      "rule": "pattern_regex",
+                      "pattern_name": "phone",
+                      "regex": "^\\+?[\\d\\-\\s\\(\\)]{7,20}$",
+                      "hit_ratio": 0.8386454183266933,
+                      "min_hit_ratio": 0.5,
+                      "severity": "warn",
+                      "source": "builtin"
+                    }
+                  }
+                ]
+              },
+              {
+                "issue": "phone pattern: invalid for India",
+                "count": 26,
+                "severity_mix": {
+                  "error": 26,
+                  "warn": 0,
+                  "info": 0
+                },
+                "examples": [
+                  {
+                    "issue_id": "a4a2e7e4ccf4",
+                    "row": 22,
+                    "severity": "error",
+                    "confidence": 0.9,
+                    "details": {
+                      "rule": "india_phone_digits",
+                      "expected_digits": 10,
+                      "actual": "+91-47555-53407"
+                    }
+                  },
+                  {
+                    "issue_id": "3d8cbccab59f",
+                    "row": 88,
+                    "severity": "error",
+                    "confidence": 0.9,
+                    "details": {
+                      "rule": "india_phone_digits",
+                      "expected_digits": 10,
+                      "actual": "50 24557584 ext 87"
+                    }
+                  },
+                  {
+                    "issue_id": "318acc359362",
+                    "row": 115,
+                    "severity": "error",
+                    "confidence": 0.9,
+                    "details": {
+                      "rule": "india_phone_digits",
+                      "expected_digits": 10,
+                      "actual": "+91 01516 42739"
+                    }
+                  }
+                ]
+              }
+            ],
+            "email": [
+              {
+                "issue": "invalid email format",
+                "count": 31,
+                "severity_mix": {
+                  "error": 31,
+                  "warn": 0,
+                  "info": 0
+                },
+                "examples": [
+                  {
+                    "issue_id": "f32888f05111",
+                    "row": 14,
+                    "severity": "error",
+                    "confidence": 0.9,
+                    "details": {
+                      "rule": "email_format_auto"
+                    }
+                  },
+                  {
+                    "issue_id": "e00114f188ff",
+                    "row": 34,
+                    "severity": "error",
+                    "confidence": 0.9,
+                    "details": {
+                      "rule": "email_format_auto"
+                    }
+                  },
+                  {
+                    "issue_id": "b985f8256273",
+                    "row": 41,
+                    "severity": "error",
+                    "confidence": 0.9,
+                    "details": {
+                      "rule": "email_format_auto"
+                    }
+                  }
+                ]
+              },
+              {
+                "issue": "email pattern: invalid format",
+                "count": 31,
+                "severity_mix": {
+                  "error": 31,
+                  "warn": 0,
+                  "info": 0
+                },
+                "examples": [
+                  {
+                    "issue_id": "1f8224272765",
+                    "row": 14,
+                    "severity": "error",
+                    "confidence": 0.9,
+                    "details": {
+                      "rule": "pattern_regex",
+                      "pattern_name": "email",
+                      "regex": "^[^@\\s]+@[^@\\s]+\\.[^@\\s]+$",
+                      "hit_ratio": 0.9492635024549918,
+                      "min_hit_ratio": 0.6,
+                      "severity": "error",
+                      "source": "builtin"
+                    }
+                  },
+                  {
+                    "issue_id": "eb1904a1d14e",
+                    "row": 34,
+                    "severity": "error",
+                    "confidence": 0.9,
+                    "details": {
+                      "rule": "pattern_regex",
+                      "pattern_name": "email",
+                      "regex": "^[^@\\s]+@[^@\\s]+\\.[^@\\s]+$",
+                      "hit_ratio": 0.9492635024549918,
+                      "min_hit_ratio": 0.6,
+                      "severity": "error",
+                      "source": "builtin"
+                    }
+                  },
+                  {
+                    "issue_id": "ef4bf338ea6c",
+                    "row": 41,
+                    "severity": "error",
+                    "confidence": 0.9,
+                    "details": {
+                      "rule": "pattern_regex",
+                      "pattern_name": "email",
+                      "regex": "^[^@\\s]+@[^@\\s]+\\.[^@\\s]+$",
+                      "hit_ratio": 0.9492635024549918,
+                      "min_hit_ratio": 0.6,
+                      "severity": "error",
+                      "source": "builtin"
+                    }
+                  }
+                ]
+              },
+              {
+                "issue": "email pattern: missing domain",
+                "count": 18,
+                "severity_mix": {
+                  "error": 18,
+                  "warn": 0,
+                  "info": 0
+                },
+                "examples": [
+                  {
+                    "issue_id": "1a99ba45f361",
+                    "row": 34,
+                    "severity": "error",
+                    "confidence": 0.9,
+                    "details": {
+                      "rule": "email_domain",
+                      "value": "sneha.bose@"
+                    }
+                  },
+                  {
+                    "issue_id": "ff01538d7ab4",
+                    "row": 51,
+                    "severity": "error",
+                    "confidence": 0.9,
+                    "details": {
+                      "rule": "email_domain",
+                      "value": "not_email"
+                    }
+                  },
+                  {
+                    "issue_id": "5d4c54b1f1e9",
+                    "row": 68,
+                    "severity": "error",
+                    "confidence": 0.9,
+                    "details": {
+                      "rule": "email_domain",
+                      "value": "arjun.khan@"
+                    }
+                  }
+                ]
+              },
+              {
+                "issue": "email pattern: domain missing dot",
+                "count": 13,
+                "severity_mix": {
+                  "error": 0,
+                  "warn": 13,
+                  "info": 0
+                },
+                "examples": [
+                  {
+                    "issue_id": "53847a64ab90",
+                    "row": 14,
+                    "severity": "warn",
+                    "confidence": 0.9,
+                    "details": {
+                      "rule": "email_domain_dot",
+                      "value": "arjun.singh@gmail"
+                    }
+                  },
+                  {
+                    "issue_id": "fc8da036a23b",
+                    "row": 41,
+                    "severity": "warn",
+                    "confidence": 0.9,
+                    "details": {
+                      "rule": "email_domain_dot",
+                      "value": "vihaan.iyer@gmail"
+                    }
+                  },
+                  {
+                    "issue_id": "ac024fa9cc13",
+                    "row": 118,
+                    "severity": "warn",
+                    "confidence": 0.9,
+                    "details": {
+                      "rule": "email_domain_dot",
+                      "value": "ira.sharma@gmail"
+                    }
+                  }
+                ]
+              },
+              {
+                "issue": "email pattern: invalid @ count",
+                "count": 11,
+                "severity_mix": {
+                  "error": 11,
+                  "warn": 0,
+                  "info": 0
+                },
+                "examples": [
+                  {
+                    "issue_id": "7ccb5bfbaca1",
+                    "row": 51,
+                    "severity": "error",
+                    "confidence": 0.9,
+                    "details": {
+                      "rule": "email_at_count",
+                      "value": "not_email"
+                    }
+                  },
+                  {
+                    "issue_id": "5d1ee6178532",
+                    "row": 93,
+                    "severity": "error",
+                    "confidence": 0.9,
+                    "details": {
+                      "rule": "email_at_count",
+                      "value": "not_email"
+                    }
+                  },
+                  {
+                    "issue_id": "24f3b079cde7",
+                    "row": 193,
+                    "severity": "error",
+                    "confidence": 0.9,
+                    "details": {
+                      "rule": "email_at_count",
+                      "value": "not_email"
+                    }
+                  }
+                ]
+              }
+            ],
+            "qty": [
+              {
+                "issue": "below minimum",
+                "count": 90,
+                "severity_mix": {
+                  "error": 0,
+                  "warn": 90,
+                  "info": 0
+                },
+                "examples": [
+                  {
+                    "issue_id": "f329ba5ede97",
+                    "row": 7,
+                    "severity": "warn",
+                    "confidence": 0.8452187350847922,
+                    "details": {
+                      "rule": "min"
+                    }
+                  },
+                  {
+                    "issue_id": "153d9b6448b0",
+                    "row": 25,
+                    "severity": "warn",
+                    "confidence": 0.8452187350847922,
+                    "details": {
+                      "rule": "min"
+                    }
+                  },
+                  {
+                    "issue_id": "aa2ef465c057",
+                    "row": 26,
+                    "severity": "warn",
+                    "confidence": 0.8452187350847922,
+                    "details": {
+                      "rule": "min"
+                    }
+                  }
+                ]
+              }
+            ],
+            "notes": [
+              {
+                "issue": "category pattern: rare value (possible typo)",
+                "count": 37,
+                "severity_mix": {
+                  "error": 0,
+                  "warn": 37,
+                  "info": 0
+                },
+                "examples": [
+                  {
+                    "issue_id": "ab7ddcf9ec7b",
+                    "row": 124,
+                    "severity": "warn",
+                    "confidence": 0.7,
+                    "details": {
+                      "rule": "category_rare",
+                      "rare_value": "call before delivery   \nsecond line"
+                    }
+                  },
+                  {
+                    "issue_id": "af9b64bb5e8d",
+                    "row": 151,
+                    "severity": "warn",
+                    "confidence": 0.7,
+                    "details": {
+                      "rule": "category_rare",
+                      "rare_value": "call before delivery   \nsecond line"
+                    }
+                  },
+                  {
+                    "issue_id": "1d4f8dad74e9",
+                    "row": 229,
+                    "severity": "warn",
+                    "confidence": 0.7,
+                    "details": {
+                      "rule": "category_rare",
+                      "rare_value": "call before delivery   \nsecond line"
+                    }
+                  }
+                ]
+              }
+            ],
+            "postal_code": [
+              {
+                "issue": "postal pattern: invalid for India",
+                "count": 13,
+                "severity_mix": {
+                  "error": 13,
+                  "warn": 0,
+                  "info": 0
+                },
+                "examples": [
+                  {
+                    "issue_id": "b5890723bdd5",
+                    "row": 100,
+                    "severity": "error",
+                    "confidence": 0.9,
+                    "details": {
+                      "rule": "india_pin",
+                      "expected_digits": 6,
+                      "actual": "ABC123"
+                    }
+                  },
+                  {
+                    "issue_id": "5ad3affa1e5a",
+                    "row": 115,
+                    "severity": "error",
+                    "confidence": 0.9,
+                    "details": {
+                      "rule": "india_pin",
+                      "expected_digits": 6,
+                      "actual": "ABC123"
+                    }
+                  },
+                  {
+                    "issue_id": "f535ac31c61d",
+                    "row": 150,
+                    "severity": "error",
+                    "confidence": 0.9,
+                    "details": {
+                      "rule": "india_pin",
+                      "expected_digits": 6,
+                      "actual": "ABC123"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        "trend": {
+          "history_enabled": true,
+          "history_path": "quality_history.json",
+          "fingerprint": "381a6303ae1fdad3",
+          "previous_score": null,
+          "current_score": 91.18,
+          "delta_score": null,
+          "message": null,
+          "timestamp_utc": "2026-03-04T09:02:59.683004"
+        },
+        "recommended_actions": [
+          {
+            "priority": "high",
+            "action": "Review missing values in key columns",
+            "reason": "Missing values found in: ['unnamed_99', 'extra', 'postal_code']",
+            "suggestion": "Decide per column: keep NaN, median fill, or ask user."
+          },
+          {
+            "priority": "high",
+            "action": "Fix the most common invalid patterns",
+            "reason": "Top issues: ['must be integer', 'below minimum', 'phone pattern: invalid format']",
+            "suggestion": "Add stronger auto-fixes OR ask user for those columns."
+          },
+          {
+            "priority": "medium",
+            "action": "Focus validation improvements on worst columns",
+            "reason": "Most problematic columns: ['discount', 'phone', 'email']",
+            "suggestion": "Tune semantic/pattern rules for these columns first."
+          },
+          {
+            "priority": "medium",
+            "action": "Review global warnings (row=None issues)",
+            "reason": "2 warnings detected (ambiguous types, rule skips, crashes).",
+            "suggestion": "These do not reduce score but indicate weak inference or unstable rules."
+          }
+        ]
+      },
+      "reports": {
+        "pipeline": {
+          "status": "success",
+          "cleaning_mode": "balanced",
+          "failed_stage": null,
+          "failed_error": null,
+          "llm_report": {
+            "status": "success",
+            "model": "deepseek-coder-7b-instruct-v1.5",
+            "base_url": "http://127.0.0.1:1234",
+            "max_rows": 30,
+            "timeout": 60,
+            "schema_columns": 0,
+            "overrides": {
+              "force_id_protection": [],
+              "semantic_hints": {},
+              "pattern_rules": {}
+            },
+            "dataset_level": {
+              "recommended_cleaning_mode": "balanced",
+              "warnings": []
+            }
+          },
+          "llm_schema": {
+            "error": "LLM did not return valid JSON",
+            "raw": "",
+            "fallback": {
+              "dataset_level": {
+                "recommended_cleaning_mode": "balanced",
+                "warnings": [
+                  "LLM output invalid JSON. Using safe fallback."
+                ]
+              },
+              "columns": {}
+            },
+            "columns": {},
+            "dataset_level": {
+              "recommended_cleaning_mode": "balanced",
+              "warnings": []
+            }
+          },
+          "llm_overrides": {
+            "force_id_protection": [],
+            "semantic_hints": {},
+            "pattern_rules": {}
+          },
+          "cleaningStage0": {
+            "stage": "Stage0_ColumnNormalizer",
+            "renamed_columns": {
+              "ORDER ID": "order_id",
+              "customerId ": "customerid",
+              "Customer Name": "customer_name",
+              "Email ": "email",
+              "Phone#": "phone",
+              "CreatedTime": "createdtime",
+              "Product": "product",
+              "Quantity": "quantity",
+              "UnitPrice": "unitprice",
+              "Total Amount": "total_amount",
+              "Discount%": "discount",
+              "Payment Status": "payment_status",
+              "Country": "country",
+              "City": "city",
+              "Postal Code": "postal_code",
+              "Returned?": "returned",
+              "Customer Rating": "customer_rating",
+              "Notes": "notes",
+              "Company": "company",
+              "  extra  ": "extra",
+              "Unnamed: 99": "unnamed_99",
+              "customerid": "user_id",
+              "quantity": "qty",
+              "unitprice": "price",
+              "total_amount": "total_amount"
+            },
+            "merged_columns": [],
+            "final_columns": [
+              "order_id",
+              "user_id",
+              "customer_name",
+              "email",
+              "phone",
+              "createdtime",
+              "product",
+              "qty",
+              "price",
+              "total_amount",
+              "discount",
+              "payment_status",
+              "country",
+              "city",
+              "postal_code",
+              "returned",
+              "customer_rating",
+              "notes",
+              "company",
+              "extra",
+              "unnamed_99"
+            ],
+            "llm": {
+              "enabled": true,
+              "model": "deepseek-coder-7b-instruct-v1.5",
+              "min_confidence": 0.8,
+              "applied_aliases": {},
+              "suggested_aliases": 0
+            }
+          },
+          "cleaningStage1": {
+            "missing": {
+              "createdtime": {
+                "count": 180,
+                "percent": 28.8,
+                "strategy": "skipped_unseen_or_unprofiled"
+              },
+              "qty": {
+                "count": 282,
+                "percent": 45.12,
+                "strategy": "median"
+              },
+              "discount": {
+                "count": 232,
+                "percent": 37.12,
+                "strategy": "median"
+              },
+              "payment_status": {
+                "count": 163,
+                "percent": 26.08,
+                "strategy": "skipped_unseen_or_unprofiled"
+              },
+              "country": {
+                "count": 64,
+                "percent": 10.24,
+                "strategy": "skipped_unseen_or_unprofiled"
+              },
+              "city": {
+                "count": 31,
+                "percent": 4.96,
+                "strategy": "mode"
+              },
+              "postal_code": {
+                "count": 376,
+                "percent": 60.16,
+                "strategy": "skipped_unseen_or_unprofiled"
+              },
+              "returned": {
+                "count": 408,
+                "percent": 65.28,
+                "strategy": "median"
+              },
+              "customer_rating": {
+                "count": 117,
+                "percent": 18.72,
+                "strategy": "skipped_unseen_or_unprofiled"
+              },
+              "notes": {
+                "count": 146,
+                "percent": 23.36,
+                "strategy": "mode"
+              },
+              "extra": {
+                "count": 529,
+                "percent": 84.64,
+                "strategy": "skipped_unseen_or_unprofiled"
+              },
+              "unnamed_99": {
+                "count": 625,
+                "percent": 100.0,
+                "strategy": "skipped_unseen_or_unprofiled"
+              }
+            },
+            "outliers": {
+              "qty": {
+                "count": 42,
+                "percent": 6.72,
+                "severity": "medium",
+                "clip_range": [
+                  -1.0,
+                  7.0
+                ],
+                "examples_first_5": [
+                  {
+                    "row": 0,
+                    "original": 9.0,
+                    "clipped_to": 7.0
+                  },
+                  {
+                    "row": 8,
+                    "original": 9.0,
+                    "clipped_to": 7.0
+                  },
+                  {
+                    "row": 31,
+                    "original": 8.0,
+                    "clipped_to": 7.0
+                  },
+                  {
+                    "row": 33,
+                    "original": 8.0,
+                    "clipped_to": 7.0
+                  },
+                  {
+                    "row": 39,
+                    "original": 8.0,
+                    "clipped_to": 7.0
+                  }
+                ]
+              },
+              "returned": {
+                "count": 105,
+                "percent": 16.8,
+                "severity": "high",
+                "clip_range": [
+                  0.0,
+                  0.0
+                ],
+                "examples_first_5": [
+                  {
+                    "row": 0,
+                    "original": 1.0,
+                    "clipped_to": 0.0
+                  },
+                  {
+                    "row": 5,
+                    "original": 1.0,
+                    "clipped_to": 0.0
+                  },
+                  {
+                    "row": 9,
+                    "original": 1.0,
+                    "clipped_to": 0.0
+                  },
+                  {
+                    "row": 18,
+                    "original": 1.0,
+                    "clipped_to": 0.0
+                  },
+                  {
+                    "row": 37,
+                    "original": 1.0,
+                    "clipped_to": 0.0
+                  }
+                ]
+              }
+            },
+            "schema": {
+              "schema": [
+                "order_id",
+                "user_id",
+                "customer_name",
+                "email",
+                "phone",
+                "city",
+                "pincode",
+                "channel",
+                "product",
+                "category",
+                "qty",
+                "price",
+                "discount",
+                "total_amount",
+                "returned",
+                "created_time",
+                "delivery_date",
+                "payment_method",
+                "rating",
+                "notes",
+                "gstin"
+              ],
+              "numeric": [
+                "pincode",
+                "qty",
+                "discount",
+                "returned",
+                "rating"
+              ],
+              "categorical": [
+                "city",
+                "channel",
+                "category",
+                "notes"
+              ],
+              "datetime": [],
+              "id_like": [
+                "order_id",
+                "user_id",
+                "customer_name",
+                "email",
+                "phone",
+                "product",
+                "price",
+                "total_amount",
+                "created_time",
+                "delivery_date",
+                "payment_method",
+                "gstin"
+              ]
+            },
+            "schema_version": "v1_20260223_171138_a5f56b",
+            "schema_hash": "246ff091303be348f445321e3b4733e8a8bbe14df9eeb874b390d5c322dd018f",
+            "id_like_detected": [
+              "order_id",
+              "user_id",
+              "customer_name",
+              "email",
+              "phone",
+              "product",
+              "price",
+              "total_amount",
+              "created_time",
+              "delivery_date",
+              "payment_method",
+              "gstin"
+            ],
+            "warnings": [
+              "[ID-LIKE] order_id",
+              "[ID-LIKE] user_id",
+              "[ID-LIKE] customer_name",
+              "[ID-LIKE] email",
+              "[ID-LIKE] phone",
+              "[ID-LIKE] product",
+              "[ID-LIKE] price",
+              "[ID-LIKE] total_amount",
+              "[ID-LIKE] created_time",
+              "[ID-LIKE] delivery_date",
+              "[ID-LIKE] payment_method",
+              "[ID-LIKE] gstin"
+            ],
+            "temporal": {
+              "date_column": null,
+              "future_cutoff_date": null
+            }
+          },
+          "cleaningStage2": {
+            "cleaning_profile": "balanced",
+            "violations": [
+              {
+                "rule": "schema_missing",
+                "message": "Missing columns vs training: ['pincode', 'channel', 'category', 'created_time', 'delivery_date', 'payment_method', 'rating', 'gstin']",
+                "severity": "warn"
+              },
+              {
+                "rule": "drift_high",
+                "message": "order_id drift HIGH",
+                "severity": "error"
+              },
+              {
+                "rule": "drift_high",
+                "message": "user_id drift HIGH",
+                "severity": "error"
+              },
+              {
+                "rule": "drift_high",
+                "message": "email drift HIGH",
+                "severity": "error"
+              },
+              {
+                "rule": "drift_high",
+                "message": "phone drift HIGH",
+                "severity": "error"
+              },
+              {
+                "rule": "drift_medium",
+                "message": "price drift MEDIUM",
+                "severity": "warn"
+              },
+              {
+                "rule": "drift_high",
+                "message": "total_amount drift HIGH",
+                "severity": "error"
+              },
+              {
+                "rule": "drift_high",
+                "message": "discount drift HIGH",
+                "severity": "error"
+              },
+              {
+                "rule": "id_nulls",
+                "message": "order_id contains nulls",
+                "severity": "warn"
+              },
+              {
+                "rule": "id_duplicates",
+                "message": "order_id contains duplicates",
+                "severity": "warn"
+              },
+              {
+                "rule": "category",
+                "message": "city unseen categories repaired",
+                "severity": "warn"
+              },
+              {
+                "rule": "category",
+                "message": "product unseen categories repaired",
+                "severity": "warn"
+              },
+              {
+                "rule": "category",
+                "message": "notes unseen categories repaired",
+                "severity": "warn"
+              },
+              {
+                "rule": "low_confidence_skip",
+                "message": "phone role 'money' confidence 0.45 below threshold",
+                "severity": "info"
+              },
+              {
+                "rule": "low_confidence_skip",
+                "message": "createdtime role 'date' confidence 0.41 below threshold",
+                "severity": "info"
+              },
+              {
+                "rule": "null_inflation_revert",
+                "message": "NULL_INFLATION_CRITICAL: price nulls 51\u219269 (+35.3%) > 25.0% THRESHOLD - REVERTED",
+                "severity": "error"
+              },
+              {
+                "rule": "null_inflation_revert",
+                "message": "NULL_INFLATION_CRITICAL: total_amount nulls 57\u219276 (+33.3%) > 25.0% THRESHOLD - REVERTED",
+                "severity": "error"
+              },
+              {
+                "rule": "null_inflation_revert",
+                "message": "CRITICAL: product nulls 0->406 (+40600.0%) > 25.0% limit -> REVERTED",
+                "severity": "error"
+              },
+              {
+                "rule": "null_inflation_revert",
+                "message": "CRITICAL: qty nulls 0->90 (+9000.0%) > 25.0% limit -> REVERTED",
+                "severity": "error"
+              },
+              {
+                "rule": "null_inflation_revert",
+                "message": "CRITICAL: city nulls 0->293 (+29300.0%) > 25.0% limit -> REVERTED",
+                "severity": "error"
+              },
+              {
+                "rule": "null_inflation_revert",
+                "message": "CRITICAL: notes nulls 0->330 (+33000.0%) > 25.0% limit -> REVERTED",
+                "severity": "error"
+              }
+            ],
+            "lineage": {
+              "order_id": [],
+              "user_id": [],
+              "customer_name": [
+                "stage2:protected_text_categorical",
+                "stage2:text_trim_only_protected"
+              ],
+              "email": [
+                "stage2:protected_text_categorical",
+                "stage2:text_trim_only_protected"
+              ],
+              "phone": [
+                "stage2:protected_text_categorical",
+                "stage2:text_trim_only_protected"
+              ],
+              "createdtime": [
+                "stage2:protected_text_categorical",
+                "stage2:text_trim_only_protected"
+              ],
+              "product": [
+                "stage2:protected_text_categorical",
+                "stage2:text_trim_only_protected",
+                "stage2:category_repair",
+                "stage2:null_guard_revert"
+              ],
+              "qty": [
+                "stage2:percent_parse_rate_1.000",
+                "stage2:percent_out_of_range_to_nan",
+                "stage2:null_guard_revert"
+              ],
+              "price": [
+                "stage2:text_strip_safe"
+              ],
+              "total_amount": [
+                "stage2:text_strip_safe"
+              ],
+              "discount": [
+                "stage2:percent_parse_rate_1.000"
+              ],
+              "payment_status": [
+                "stage2:protected_text_categorical",
+                "stage2:text_trim_only_protected"
+              ],
+              "country": [
+                "stage2:protected_text_categorical",
+                "stage2:text_trim_only_protected"
+              ],
+              "city": [
+                "stage2:protected_text_categorical",
+                "stage2:text_trim_only_protected",
+                "stage2:category_repair",
+                "stage2:null_guard_revert"
+              ],
+              "postal_code": [
+                "stage2:protected_text_categorical",
+                "stage2:text_trim_only_protected"
+              ],
+              "returned": [
+                "stage2:percent_parse_rate_1.000"
+              ],
+              "customer_rating": [
+                "stage2:text_strip_safe"
+              ],
+              "notes": [
+                "stage2:protected_text_categorical",
+                "stage2:text_trim_only_protected",
+                "stage2:category_repair",
+                "stage2:null_guard_revert"
+              ],
+              "company": [],
+              "extra": [
+                "stage2:protected_text_categorical",
+                "stage2:text_trim_only_protected"
+              ],
+              "unnamed_99": []
+            },
+            "roles": {
+              "customer_name": "unknown",
+              "email": "unknown",
+              "phone": "money",
+              "createdtime": "date",
+              "product": "unknown",
+              "qty": "percent",
+              "price": "money",
+              "total_amount": "money",
+              "discount": "percent",
+              "payment_status": "unknown",
+              "country": "unknown",
+              "city": "unknown",
+              "postal_code": "unknown",
+              "returned": "percent",
+              "customer_rating": "unknown",
+              "notes": "unknown",
+              "extra": "unknown",
+              "unnamed_99": "unknown"
+            },
+            "role_confidence": {
+              "customer_name": 0.2,
+              "email": 0.2,
+              "phone": 0.4516,
+              "createdtime": 0.41312000000000004,
+              "product": 0.2,
+              "qty": 0.6212,
+              "price": 0.6414466321243524,
+              "total_amount": 0.6397360824742268,
+              "discount": 0.75,
+              "payment_status": 0.2,
+              "country": 0.2,
+              "city": 0.2,
+              "postal_code": 0.2,
+              "returned": 0.65,
+              "customer_rating": 0.2,
+              "notes": 0.2,
+              "extra": 0.2,
+              "unnamed_99": 0.2
+            },
+            "low_confidence_columns": [
+              "customer_name",
+              "email",
+              "phone",
+              "createdtime",
+              "product",
+              "payment_status",
+              "country",
+              "city",
+              "postal_code",
+              "customer_rating",
+              "notes",
+              "extra",
+              "unnamed_99"
+            ],
+            "protected_text_columns": [
+              "user_id",
+              "city",
+              "notes",
+              "postal_code",
+              "extra",
+              "country",
+              "order_id",
+              "company",
+              "createdtime",
+              "customer_name",
+              "email",
+              "payment_status",
+              "phone",
+              "product"
+            ],
+            "conversion_rates": {
+              "qty": {
+                "rate": 1.0
+              },
+              "price": {
+                "rate": 0.9686411149825784
+              },
+              "total_amount": {
+                "rate": 0.9665492957746479
+              },
+              "discount": {
+                "rate": 1.0
+              },
+              "returned": {
+                "rate": 1.0
+              }
+            },
+            "drift": {
+              "order_id": {
+                "train_missing": 0.0,
+                "cur_missing": 0.3504,
+                "delta_missing": 0.3504,
+                "train_unique": 1.0,
+                "cur_unique": 0.6208,
+                "delta_unique": 0.3792,
+                "level": "high"
+              },
+              "user_id": {
+                "train_missing": 0.0,
+                "cur_missing": 0.5152,
+                "delta_missing": 0.5152,
+                "train_unique": 0.4,
+                "cur_unique": 0.4432,
+                "delta_unique": 0.04319999999999996,
+                "level": "high"
+              },
+              "customer_name": {
+                "train_missing": 0.0,
+                "cur_missing": 0.0,
+                "delta_missing": 0.0,
+                "train_unique": 0.356,
+                "cur_unique": 0.3696,
+                "delta_unique": 0.013600000000000001,
+                "level": "none"
+              },
+              "email": {
+                "train_missing": 0.0,
+                "cur_missing": 0.0224,
+                "delta_missing": 0.0224,
+                "train_unique": 1.0,
+                "cur_unique": 0.7712,
+                "delta_unique": 0.2288,
+                "level": "high"
+              },
+              "phone": {
+                "train_missing": 0.0,
+                "cur_missing": 0.1968,
+                "delta_missing": 0.1968,
+                "train_unique": 1.0,
+                "cur_unique": 0.776,
+                "delta_unique": 0.22399999999999998,
+                "level": "high"
+              },
+              "product": {
+                "train_missing": 0.0,
+                "cur_missing": 0.0,
+                "delta_missing": 0.0,
+                "train_unique": 0.024,
+                "cur_unique": 0.0224,
+                "delta_unique": 0.0016000000000000007,
+                "level": "none"
+              },
+              "qty": {
+                "train_missing": 0.0,
+                "cur_missing": 0.0,
+                "delta_missing": 0.0,
+                "train_unique": 0.01,
+                "cur_unique": 0.0144,
+                "delta_unique": 0.004399999999999999,
+                "level": "none"
+              },
+              "price": {
+                "train_missing": 0.0,
+                "cur_missing": 0.0816,
+                "delta_missing": 0.0816,
+                "train_unique": 1.0,
+                "cur_unique": 0.8544,
+                "delta_unique": 0.14559999999999995,
+                "level": "medium"
+              },
+              "total_amount": {
+                "train_missing": 0.0,
+                "cur_missing": 0.0912,
+                "delta_missing": 0.0912,
+                "train_unique": 1.0,
+                "cur_unique": 0.8448,
+                "delta_unique": 0.1552,
+                "level": "high"
+              },
+              "discount": {
+                "train_missing": 0.0,
+                "cur_missing": 0.0,
+                "delta_missing": 0.0,
+                "train_unique": 0.012,
+                "cur_unique": 0.6,
+                "delta_unique": 0.588,
+                "level": "high"
+              },
+              "city": {
+                "train_missing": 0.0,
+                "cur_missing": 0.0,
+                "delta_missing": 0.0,
+                "train_unique": 0.024,
+                "cur_unique": 0.0448,
+                "delta_unique": 0.0208,
+                "level": "none"
+              },
+              "returned": {
+                "train_missing": 0.0,
+                "cur_missing": 0.0,
+                "delta_missing": 0.0,
+                "train_unique": 0.002,
+                "cur_unique": 0.0016,
+                "delta_unique": 0.00039999999999999996,
+                "level": "none"
+              },
+              "notes": {
+                "train_missing": 0.0,
+                "cur_missing": 0.0,
+                "delta_missing": 0.0,
+                "train_unique": 0.008,
+                "cur_unique": 0.032,
+                "delta_unique": 0.024,
+                "level": "none"
+              }
+            },
+            "null_inflation_summary": [
+              {
+                "column": "order_id",
+                "before_nulls": 219,
+                "after_nulls": 219,
+                "change_ratio": 0.0
+              },
+              {
+                "column": "user_id",
+                "before_nulls": 322,
+                "after_nulls": 322,
+                "change_ratio": 0.0
+              },
+              {
+                "column": "customer_name",
+                "before_nulls": 0,
+                "after_nulls": 0,
+                "change_ratio": 0.0
+              },
+              {
+                "column": "email",
+                "before_nulls": 14,
+                "after_nulls": 14,
+                "change_ratio": 0.0
+              },
+              {
+                "column": "phone",
+                "before_nulls": 123,
+                "after_nulls": 123,
+                "change_ratio": 0.0
+              },
+              {
+                "column": "createdtime",
+                "before_nulls": 180,
+                "after_nulls": 180,
+                "change_ratio": 0.0
+              },
+              {
+                "column": "product",
+                "before_nulls": 0,
+                "after_nulls": 0,
+                "change_ratio": 0.0
+              },
+              {
+                "column": "qty",
+                "before_nulls": 0,
+                "after_nulls": 0,
+                "change_ratio": 0.0
+              },
+              {
+                "column": "price",
+                "before_nulls": 51,
+                "after_nulls": 51,
+                "change_ratio": 0.0
+              },
+              {
+                "column": "total_amount",
+                "before_nulls": 57,
+                "after_nulls": 57,
+                "change_ratio": 0.0
+              },
+              {
+                "column": "discount",
+                "before_nulls": 0,
+                "after_nulls": 0,
+                "change_ratio": 0.0
+              },
+              {
+                "column": "payment_status",
+                "before_nulls": 163,
+                "after_nulls": 163,
+                "change_ratio": 0.0
+              },
+              {
+                "column": "country",
+                "before_nulls": 64,
+                "after_nulls": 64,
+                "change_ratio": 0.0
+              },
+              {
+                "column": "city",
+                "before_nulls": 0,
+                "after_nulls": 0,
+                "change_ratio": 0.0
+              },
+              {
+                "column": "postal_code",
+                "before_nulls": 376,
+                "after_nulls": 376,
+                "change_ratio": 0.0
+              },
+              {
+                "column": "returned",
+                "before_nulls": 0,
+                "after_nulls": 0,
+                "change_ratio": 0.0
+              },
+              {
+                "column": "customer_rating",
+                "before_nulls": 117,
+                "after_nulls": 117,
+                "change_ratio": 0.0
+              },
+              {
+                "column": "notes",
+                "before_nulls": 0,
+                "after_nulls": 0,
+                "change_ratio": 0.0
+              },
+              {
+                "column": "company",
+                "before_nulls": 0,
+                "after_nulls": 0,
+                "change_ratio": 0.0
+              },
+              {
+                "column": "extra",
+                "before_nulls": 529,
+                "after_nulls": 529,
+                "change_ratio": 0.0
+              },
+              {
+                "column": "unnamed_99",
+                "before_nulls": 625,
+                "after_nulls": 625,
+                "change_ratio": 0.0
+              }
+            ],
+            "high_missing_cols": [
+              "gstin"
+            ],
+            "constant_cols": [
+              "returned"
+            ],
+            "schema": [
+              "order_id",
+              "user_id",
+              "customer_name",
+              "email",
+              "phone",
+              "city",
+              "pincode",
+              "channel",
+              "product",
+              "category",
+              "qty",
+              "price",
+              "discount",
+              "total_amount",
+              "returned",
+              "created_time",
+              "delivery_date",
+              "payment_method",
+              "rating",
+              "notes",
+              "gstin"
+            ],
+            "learning_feedback": {
+              "memory_size": 16
+            }
+          },
+          "semanticValidator": {
+            "semantic_issue_count": 482,
+            "dataset_risk": "medium",
+            "diff_report": {
+              "rows_changed": 438,
+              "columns_modified": [
+                "qty",
+                "discount"
+              ],
+              "nulls_before": 2840,
+              "nulls_after": 2840,
+              "risky_columns_flagged": [
+                "payment_status",
+                "country",
+                "notes",
+                "extra"
+              ],
+              "junk_columns_count": 2,
+              "junk_columns_flagged": [
+                "extra",
+                "unnamed_99"
+              ]
+            },
+            "column_health_scores": [
+              {
+                "column": "order_id",
+                "action": "scanned",
+                "confidence": 0.98,
+                "risk": "low",
+                "column_health": "ok",
+                "semantic_type": "ID"
+              },
+              {
+                "column": "user_id",
+                "action": "scanned",
+                "confidence": 0.98,
+                "risk": "low",
+                "column_health": "ok",
+                "semantic_type": "ID"
+              },
+              {
+                "column": "customer_name",
+                "action": "scanned",
+                "confidence": 0.84,
+                "risk": "low",
+                "column_health": "ok",
+                "semantic_type": "CATEGORY"
+              },
+              {
+                "column": "email",
+                "action": "scanned",
+                "confidence": 0.98,
+                "risk": "low",
+                "column_health": "ok",
+                "semantic_type": "ID"
+              },
+              {
+                "column": "phone",
+                "action": "scanned",
+                "confidence": 0.98,
+                "risk": "low",
+                "column_health": "ok",
+                "semantic_type": "ID"
+              },
+              {
+                "column": "createdtime",
+                "action": "scanned",
+                "confidence": 0.9,
+                "risk": "low",
+                "column_health": "ok",
+                "semantic_type": "ID"
+              },
+              {
+                "column": "product",
+                "action": "scanned",
+                "confidence": 0.84,
+                "risk": "low",
+                "column_health": "ok",
+                "semantic_type": "CATEGORY"
+              },
+              {
+                "column": "qty",
+                "action": "normalized",
+                "confidence": 0.939,
+                "risk": "low",
+                "column_health": "ok",
+                "semantic_type": "COUNT"
+              },
+              {
+                "column": "price",
+                "action": "scanned",
+                "confidence": 0.98,
+                "risk": "low",
+                "column_health": "ok",
+                "semantic_type": "ID"
+              },
+              {
+                "column": "total_amount",
+                "action": "scanned",
+                "confidence": 0.98,
+                "risk": "low",
+                "column_health": "ok",
+                "semantic_type": "ID"
+              },
+              {
+                "column": "discount",
+                "action": "normalized",
+                "confidence": 0.939,
+                "risk": "low",
+                "column_health": "ok",
+                "semantic_type": "COUNT"
+              },
+              {
+                "column": "payment_status",
+                "action": "scanned",
+                "confidence": 0.7,
+                "risk": "medium",
+                "column_health": "ok",
+                "semantic_type": "CATEGORY"
+              },
+              {
+                "column": "country",
+                "action": "scanned",
+                "confidence": 0.7,
+                "risk": "medium",
+                "column_health": "ok",
+                "semantic_type": "CATEGORY"
+              },
+              {
+                "column": "city",
+                "action": "scanned",
+                "confidence": 0.98,
+                "risk": "low",
+                "column_health": "ok",
+                "semantic_type": "CATEGORY"
+              },
+              {
+                "column": "postal_code",
+                "action": "scanned",
+                "confidence": 0.8,
+                "risk": "low",
+                "column_health": "ok",
+                "semantic_type": "COUNT"
+              },
+              {
+                "column": "returned",
+                "action": "scanned",
+                "confidence": 0.939,
+                "risk": "low",
+                "column_health": "ok",
+                "semantic_type": "COUNT"
+              },
+              {
+                "column": "customer_rating",
+                "action": "scanned",
+                "confidence": 0.8,
+                "risk": "low",
+                "column_health": "ok",
+                "semantic_type": "COUNT"
+              },
+              {
+                "column": "notes",
+                "action": "scanned",
+                "confidence": 0.742,
+                "risk": "medium",
+                "column_health": "ok",
+                "semantic_type": "TEXT"
+              },
+              {
+                "column": "company",
+                "action": "scanned",
+                "confidence": 0.98,
+                "risk": "low",
+                "column_health": "ok",
+                "semantic_type": "ID"
+              },
+              {
+                "column": "extra",
+                "action": "scanned",
+                "confidence": 0.7,
+                "risk": "medium",
+                "column_health": "junk_possible",
+                "semantic_type": "CATEGORY"
+              },
+              {
+                "column": "unnamed_99",
+                "action": "scanned",
+                "confidence": 1.0,
+                "risk": "low",
+                "column_health": "junk_possible",
+                "semantic_type": "TEXT"
+              }
+            ],
+            "llm_meta": {
+              "llm_status": "ok",
+              "reason": "ok",
+              "attempted_columns": 5,
+              "used_columns_list": [
+                "payment_status",
+                "country",
+                "notes",
+                "extra",
+                "unnamed_99"
+              ]
+            },
+            "type_drift_warnings": []
+          },
+          "relationshipValidator": {
+            "relationship_issue_count": 32,
+            "universal_mode": true,
+            "date_order_tolerance": 0,
+            "numeric_order_tolerance": 0.0,
+            "strength_counts": {
+              "high": 0,
+              "medium": 0,
+              "low": 0
+            }
+          },
+          "patternValidator": {
+            "pattern_issue_count": 230,
+            "apply_fixes": false,
+            "custom_patterns_enabled": false,
+            "issues_by_rule": {
+              "email_at_count": 11,
+              "email_domain": 18,
+              "email_domain_dot": 13,
+              "pattern_regex": 112,
+              "india_phone_digits": 26,
+              "india_pin": 13,
+              "category_rare": 37
+            },
+            "llm_enabled": true,
+            "llm_model": "deepseek-coder-7b-instruct-v1.5",
+            "llm_status": "ok",
+            "llm_min_confidence": 0.7,
+            "llm_patterns_applied": 0
+          },
+          "outlierAwareImputer": {
+            "imputation_enabled": true,
+            "imputation_issue_count": 1,
+            "max_k": 5,
+            "max_missing_rate": 0.5,
+            "min_group_size": 10,
+            "imputation_metrics": {
+              "max_missing_rate": 0.5,
+              "min_group_size": 10,
+              "skipped_sparse_columns": [
+                "unnamed_99"
+              ],
+              "too_sparse_reason": {
+                "unnamed_99": "too sparse to safely impute (missing_rate=100.0% > 50%)"
+              },
+              "imputed_counts": {
+                "group_median": 0,
+                "knn_numeric": 0,
+                "global_median": 0
+              },
+              "confidence_by_method": {
+                "group_median": 0.85,
+                "knn_numeric": 0.75,
+                "global_median": 0.6
+              }
+            }
+          },
+          "exportNormalizer": {
+            "export_normalizer": "success",
+            "datetime_format": "%Y-%m-%d %H:%M:%S",
+            "min_parse_ratio": 0.8,
+            "date_columns_override": null,
+            "converted_datetime_columns": [],
+            "datetime_conversion_report": {},
+            "warnings": [],
+            "original_dtypes": {
+              "order_id": "object",
+              "user_id": "object",
+              "customer_name": "string",
+              "email": "string",
+              "phone": "float64",
+              "city": "string",
+              "pincode": "float64",
+              "channel": "string",
+              "product": "string",
+              "category": "string",
+              "qty": "float64",
+              "price": "float64",
+              "discount": "float64",
+              "total_amount": "float64",
+              "returned": "float64",
+              "created_time": "datetime64[ns]",
+              "delivery_date": "datetime64[ns]",
+              "payment_method": "string",
+              "rating": "float64",
+              "notes": "string",
+              "gstin": "object"
+            }
+          }
+        },
+        "stage6": {
+          "overall_score": 91.18,
+          "health_grade": "B",
+          "total_issues_used": 745,
+          "row_issues_used_in_score": 743,
+          "global_issues_not_scored": 2,
+          "warnings_count": 2,
+          "trend_message": null,
+          "delta_score": null,
+          "previous_score": null
+        },
+        "issues_summary": {
+          "total_issues": 745,
+          "row_issues": 743,
+          "global_issues": 2
+        },
+        "runner_meta": {
+          "timeout_seconds": null,
+          "memory_warn_mb": 500.0,
+          "memory": {
+            "estimated_df_memory_mb": 0.6,
+            "warnings": []
+          },
+          "warnings": [],
+          "timing": {
+            "total_seconds": 0.658
+          },
+          "status": "success"
+        }
+      }
+    }
+  },
+  "note": "Preview shows first 100 rows only."
+}
