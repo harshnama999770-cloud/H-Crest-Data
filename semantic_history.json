@@ -1,0 +1,546 @@
+{
+  "age": {
+    "candidates": [
+      {
+        "confidence": 0.98,
+        "type": "AGE"
+      },
+      {
+        "confidence": 0.8,
+        "type": "COUNT"
+      },
+      {
+        "confidence": 0.7,
+        "type": "CATEGORY"
+      }
+    ],
+    "confidence": 0.98,
+    "last_seen": "2026-02-23T17:11:50Z",
+    "seen_count": 4,
+    "type": "AGE"
+  },
+  "age_5": {
+    "candidates": [
+      {
+        "confidence": 0.95,
+        "type": "AGE"
+      },
+      {
+        "confidence": 0.6,
+        "type": "PERCENTAGE"
+      },
+      {
+        "confidence": 0.6,
+        "type": "TEXT"
+      }
+    ],
+    "confidence": 0.95,
+    "last_seen": "2026-02-23T15:05:01Z",
+    "seen_count": 1,
+    "type": "AGE"
+  },
+  "category": {
+    "candidates": [
+      {
+        "confidence": 0.7,
+        "type": "CATEGORY"
+      },
+      {
+        "confidence": 0.6,
+        "type": "TEXT"
+      }
+    ],
+    "confidence": 0.7,
+    "last_seen": "2026-02-23T17:11:38Z",
+    "seen_count": 2,
+    "type": "CATEGORY"
+  },
+  "channel": {
+    "candidates": [
+      {
+        "confidence": 0.7,
+        "type": "CATEGORY"
+      },
+      {
+        "confidence": 0.6,
+        "type": "TEXT"
+      }
+    ],
+    "confidence": 0.7,
+    "last_seen": "2026-02-23T17:11:38Z",
+    "seen_count": 2,
+    "type": "CATEGORY"
+  },
+  "city": {
+    "candidates": [
+      {
+        "confidence": 0.98,
+        "type": "CATEGORY"
+      },
+      {
+        "confidence": 0.6,
+        "type": "TEXT"
+      }
+    ],
+    "confidence": 0.98,
+    "last_seen": "2026-02-23T17:11:50Z",
+    "seen_count": 6,
+    "type": "CATEGORY"
+  },
+  "created_time": {
+    "candidates": [
+      {
+        "confidence": 0.95,
+        "type": "DATE"
+      },
+      {
+        "confidence": 0.9,
+        "type": "ID"
+      },
+      {
+        "confidence": 0.6,
+        "type": "TEXT"
+      }
+    ],
+    "confidence": 0.95,
+    "last_seen": "2026-02-23T17:11:38Z",
+    "seen_count": 2,
+    "type": "DATE"
+  },
+  "customer_name": {
+    "candidates": [
+      {
+        "confidence": 0.7,
+        "type": "CATEGORY"
+      },
+      {
+        "confidence": 0.6,
+        "type": "TEXT"
+      }
+    ],
+    "confidence": 0.7,
+    "last_seen": "2026-02-23T17:11:38Z",
+    "seen_count": 2,
+    "type": "CATEGORY"
+  },
+  "delivery_date": {
+    "candidates": [
+      {
+        "confidence": 0.95,
+        "type": "DATE"
+      },
+      {
+        "confidence": 0.7,
+        "type": "CATEGORY"
+      },
+      {
+        "confidence": 0.6,
+        "type": "TEXT"
+      }
+    ],
+    "confidence": 0.95,
+    "last_seen": "2026-02-23T17:11:38Z",
+    "seen_count": 2,
+    "type": "DATE"
+  },
+  "discount": {
+    "candidates": [
+      {
+        "confidence": 0.8,
+        "type": "COUNT"
+      },
+      {
+        "confidence": 0.7,
+        "type": "CATEGORY"
+      },
+      {
+        "confidence": 0.6,
+        "type": "PERCENTAGE"
+      }
+    ],
+    "confidence": 0.8,
+    "last_seen": "2026-02-23T17:11:38Z",
+    "seen_count": 2,
+    "type": "COUNT"
+  },
+  "email": {
+    "candidates": [
+      {
+        "confidence": 0.9,
+        "type": "ID"
+      },
+      {
+        "confidence": 0.6,
+        "type": "TEXT"
+      }
+    ],
+    "confidence": 0.9,
+    "last_seen": "2026-02-23T17:11:38Z",
+    "seen_count": 2,
+    "type": "ID"
+  },
+  "gender": {
+    "candidates": [
+      {
+        "confidence": 0.98,
+        "type": "CATEGORY"
+      },
+      {
+        "confidence": 0.6,
+        "type": "TEXT"
+      }
+    ],
+    "confidence": 0.98,
+    "last_seen": "2026-02-23T17:11:50Z",
+    "seen_count": 4,
+    "type": "CATEGORY"
+  },
+  "gstin": {
+    "candidates": [
+      {
+        "confidence": 0.98,
+        "type": "ID"
+      },
+      {
+        "confidence": 0.8,
+        "type": "COUNT"
+      },
+      {
+        "confidence": 0.6,
+        "type": "TEXT"
+      }
+    ],
+    "confidence": 0.98,
+    "last_seen": "2026-02-23T17:11:38Z",
+    "seen_count": 2,
+    "type": "ID"
+  },
+  "income": {
+    "candidates": [
+      {
+        "confidence": 0.98,
+        "type": "COUNT"
+      },
+      {
+        "confidence": 0.7,
+        "type": "CATEGORY"
+      },
+      {
+        "confidence": 0.6,
+        "type": "TEXT"
+      }
+    ],
+    "confidence": 0.98,
+    "last_seen": "2026-02-23T17:11:50Z",
+    "seen_count": 4,
+    "type": "COUNT"
+  },
+  "is_active": {
+    "candidates": [
+      {
+        "confidence": 0.98,
+        "type": "COUNT"
+      },
+      {
+        "confidence": 0.7,
+        "type": "CATEGORY"
+      },
+      {
+        "confidence": 0.6,
+        "type": "PERCENTAGE"
+      }
+    ],
+    "confidence": 0.98,
+    "last_seen": "2026-02-23T17:11:50Z",
+    "seen_count": 4,
+    "type": "COUNT"
+  },
+  "last_login": {
+    "candidates": [
+      {
+        "confidence": 0.98,
+        "type": "DATE"
+      },
+      {
+        "confidence": 0.6,
+        "type": "TEXT"
+      }
+    ],
+    "confidence": 0.98,
+    "last_seen": "2026-02-23T17:11:50Z",
+    "seen_count": 4,
+    "type": "DATE"
+  },
+  "name": {
+    "candidates": [
+      {
+        "confidence": 0.98,
+        "type": "ID"
+      },
+      {
+        "confidence": 0.7,
+        "type": "CATEGORY"
+      },
+      {
+        "confidence": 0.6,
+        "type": "TEXT"
+      }
+    ],
+    "confidence": 0.98,
+    "last_seen": "2026-02-23T17:11:50Z",
+    "seen_count": 4,
+    "type": "ID"
+  },
+  "notes": {
+    "candidates": [
+      {
+        "confidence": 0.6,
+        "type": "TEXT"
+      }
+    ],
+    "confidence": 0.6,
+    "last_seen": "2026-02-23T17:11:38Z",
+    "seen_count": 2,
+    "type": "TEXT"
+  },
+  "order_id": {
+    "candidates": [
+      {
+        "confidence": 0.98,
+        "type": "ID"
+      },
+      {
+        "confidence": 0.6,
+        "type": "TEXT"
+      }
+    ],
+    "confidence": 0.98,
+    "last_seen": "2026-02-23T17:11:38Z",
+    "seen_count": 2,
+    "type": "ID"
+  },
+  "payment_method": {
+    "candidates": [
+      {
+        "confidence": 0.7,
+        "type": "CATEGORY"
+      },
+      {
+        "confidence": 0.6,
+        "type": "TEXT"
+      }
+    ],
+    "confidence": 0.7,
+    "last_seen": "2026-02-23T17:11:38Z",
+    "seen_count": 2,
+    "type": "CATEGORY"
+  },
+  "phone": {
+    "candidates": [
+      {
+        "confidence": 0.9,
+        "type": "ID"
+      },
+      {
+        "confidence": 0.6,
+        "type": "TEXT"
+      }
+    ],
+    "confidence": 0.9,
+    "last_seen": "2026-02-23T17:11:38Z",
+    "seen_count": 2,
+    "type": "ID"
+  },
+  "pincode": {
+    "candidates": [
+      {
+        "confidence": 0.8,
+        "type": "COUNT"
+      },
+      {
+        "confidence": 0.7,
+        "type": "CATEGORY"
+      },
+      {
+        "confidence": 0.6,
+        "type": "TEXT"
+      }
+    ],
+    "confidence": 0.8,
+    "last_seen": "2026-02-23T17:11:38Z",
+    "seen_count": 2,
+    "type": "COUNT"
+  },
+  "price": {
+    "candidates": [
+      {
+        "confidence": 0.9,
+        "type": "ID"
+      },
+      {
+        "confidence": 0.75,
+        "type": "MONEY"
+      },
+      {
+        "confidence": 0.6,
+        "type": "AMOUNT"
+      }
+    ],
+    "confidence": 0.9,
+    "last_seen": "2026-02-23T17:11:38Z",
+    "seen_count": 2,
+    "type": "ID"
+  },
+  "product": {
+    "candidates": [
+      {
+        "confidence": 0.7,
+        "type": "CATEGORY"
+      },
+      {
+        "confidence": 0.6,
+        "type": "TEXT"
+      }
+    ],
+    "confidence": 0.7,
+    "last_seen": "2026-02-23T17:11:38Z",
+    "seen_count": 2,
+    "type": "CATEGORY"
+  },
+  "qty": {
+    "candidates": [
+      {
+        "confidence": 0.8,
+        "type": "COUNT"
+      },
+      {
+        "confidence": 0.7,
+        "type": "CATEGORY"
+      },
+      {
+        "confidence": 0.6,
+        "type": "PERCENTAGE"
+      }
+    ],
+    "confidence": 0.8,
+    "last_seen": "2026-02-23T17:11:38Z",
+    "seen_count": 2,
+    "type": "COUNT"
+  },
+  "rating": {
+    "candidates": [
+      {
+        "confidence": 0.8,
+        "type": "COUNT"
+      },
+      {
+        "confidence": 0.7,
+        "type": "CATEGORY"
+      },
+      {
+        "confidence": 0.6,
+        "type": "PERCENTAGE"
+      }
+    ],
+    "confidence": 0.8,
+    "last_seen": "2026-02-23T17:11:38Z",
+    "seen_count": 2,
+    "type": "COUNT"
+  },
+  "returned": {
+    "candidates": [
+      {
+        "confidence": 0.8,
+        "type": "COUNT"
+      },
+      {
+        "confidence": 0.7,
+        "type": "CATEGORY"
+      },
+      {
+        "confidence": 0.6,
+        "type": "PERCENTAGE"
+      }
+    ],
+    "confidence": 0.8,
+    "last_seen": "2026-02-23T17:11:38Z",
+    "seen_count": 2,
+    "type": "COUNT"
+  },
+  "signup_date": {
+    "candidates": [
+      {
+        "confidence": 0.98,
+        "type": "DATE"
+      },
+      {
+        "confidence": 0.6,
+        "type": "TEXT"
+      }
+    ],
+    "confidence": 0.98,
+    "last_seen": "2026-02-23T17:11:50Z",
+    "seen_count": 4,
+    "type": "DATE"
+  },
+  "total_amount": {
+    "candidates": [
+      {
+        "confidence": 0.9,
+        "type": "ID"
+      },
+      {
+        "confidence": 0.75,
+        "type": "MONEY"
+      },
+      {
+        "confidence": 0.6,
+        "type": "AMOUNT"
+      }
+    ],
+    "confidence": 0.9,
+    "last_seen": "2026-02-23T17:11:38Z",
+    "seen_count": 2,
+    "type": "ID"
+  },
+  "total_spent": {
+    "candidates": [
+      {
+        "confidence": 0.98,
+        "type": "COUNT"
+      },
+      {
+        "confidence": 0.7,
+        "type": "CATEGORY"
+      },
+      {
+        "confidence": 0.6,
+        "type": "TEXT"
+      }
+    ],
+    "confidence": 0.98,
+    "last_seen": "2026-02-23T17:11:50Z",
+    "seen_count": 4,
+    "type": "COUNT"
+  },
+  "user_id": {
+    "candidates": [
+      {
+        "confidence": 0.98,
+        "type": "ID"
+      },
+      {
+        "confidence": 0.6,
+        "type": "PERCENTAGE"
+      },
+      {
+        "confidence": 0.6,
+        "type": "TEXT"
+      }
+    ],
+    "confidence": 0.98,
+    "last_seen": "2026-02-23T17:11:50Z",
+    "seen_count": 6,
+    "type": "ID"
+  }
+}

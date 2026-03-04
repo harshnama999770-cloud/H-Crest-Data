@@ -1,0 +1,27 @@
+[
+  {
+    "fingerprint": "dcbf4686f7d86abe",
+    "timestamp_utc": "2026-02-23T14:55:26.088377",
+    "score": 99.63
+  },
+  {
+    "fingerprint": "9464e477ac68c29b",
+    "timestamp_utc": "2026-02-23T14:56:11.520513",
+    "score": 100.0
+  },
+  {
+    "fingerprint": "ad7b2a5de6e3233e",
+    "timestamp_utc": "2026-02-23T15:05:01.360988",
+    "score": 80.0
+  },
+  {
+    "fingerprint": "7a0115da2e49d087",
+    "timestamp_utc": "2026-02-23T15:06:57.024485",
+    "score": 92.43
+  },
+  {
+    "fingerprint": "7a0115da2e49d087",
+    "timestamp_utc": "2026-02-23T17:11:50.207286",
+    "score": 92.39
+  }
+]
