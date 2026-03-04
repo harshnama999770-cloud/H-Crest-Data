@@ -251,7 +251,25 @@ Run the pipeline
 
 python app/run_pipeline_once.py
 
+## Example Data Quality Report
 
+The pipeline produces a structured JSON report describing
+dataset health, detected issues, and recommended actions.
+
+Example output is available here:
+
+reports/example_quality_report.json
+
+Example summary:
+
+Dataset Quality Score: 91.18
+Health Grade: B
+Total Issues Detected: 745
+
+Top Problem Columns:
+- discount
+- phone
+- email
 
 
 ## Learning Goals
