@@ -282,7 +282,23 @@ This project explores several topics related to machine learning infrastructure:
 * hybrid rule-based and AI-assisted systems
 * dataset observability
 
+## Running the Application
 
+The main entry point of the system is `app.py`.
+
+Running this file will start the full data cleaning pipeline and execute the complete processing workflow.
+
+Run the application from the terminal:
+
+python app.py
+
+The application will:
+
+- load the input dataset
+- run the full cleaning pipeline
+- apply validation and semantic checks
+- generate the cleaned dataset
+- produce a detailed JSON quality report
 
 ## Author
 
